@@ -6,12 +6,12 @@
 
 Gem::Specification.new do |s|
   s.name = "deep_cloneable"
-  s.version = "2.3.1"
+  s.version = "2.3.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib"]
   s.authors = ["Reinier de Lange"]
-  s.date = "2017-10-02"
+  s.date = "2018-04-10"
   s.description = "Extends the functionality of ActiveRecord::Base#dup to perform a deep clone that includes user specified associations. "
   s.email = "r.j.delange@nedforce.nl"
   s.extra_rdoc_files = [
@@ -58,12 +58,12 @@ Gem::Specification.new do |s|
     s.specification_version = 4
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<activerecord>, ["< 5.2.0", ">= 3.1.0"])
+      s.add_runtime_dependency(%q<activerecord>, [ ">= 3.1.0"])
     else
-      s.add_dependency(%q<activerecord>, ["< 5.2.0", ">= 3.1.0"])
+      s.add_dependency(%q<activerecord>, [ ">= 3.1.0"])
     end
   else
-    s.add_dependency(%q<activerecord>, ["< 5.2.0", ">= 3.1.0"])
+    s.add_dependency(%q<activerecord>, [ ">= 3.1.0"])
   end
 end
 
